@@ -1,24 +1,35 @@
-import logo from './logo.svg';
+import React, { useState } from 'react'
 import './App.css';
+import Editor from './components/Editor';
+import Frame from './components/Frame';
+
 
 function App() {
+  const [s_html,setHTML] = useState("")
+  const [s_css,setCSS] = useState("")
+  const [s_js,setJS] = useState("")
+
+  const html = (e) =>{
+    setHTML(e.target.value)
+  }
+  const css= (e) =>{
+    setCSS(e.target.value)
+  }
+  const js= (e)=>{
+    setJS(e.target.value)
+  }
+ 
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <div className = 'Editors'>
+          <Editor id='html' placeholder='Write HTML code here' click={html} />
+          <Editor id = 'css' placeholder='Write CSS code here' click={css} />
+          <Editor id = 'js' placeholder='Write JavaScript code here' click={js} />
+      </div>
+      <Frame html={s_html} css={s_css} js={s_js} />
     </div>
+
   );
 }
 
