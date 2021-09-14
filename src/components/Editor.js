@@ -10,11 +10,20 @@ const Editor = (props) =>  {
     const handleToggle = () => {
         setOpen(!isOpen);
     }
+    const eraseText = () => {
+       // document.getElementById(`${props.id}`).value = "";
+       setValue("");
+    }
 
     return (
         <div className = "AllEditors">
-            <div className = "titles">{props.editorTitle}<button onClick = {handleToggle}>{isOpen? "[x]":"[+}"}</button></div>
-            <textarea className = {isOpen ? "opened" : "closed"} value={value} onChange={changeValue} row = "7" id = {props.id} placeholder = {props.placeholder}></textarea>
+            <div className = "titles">{props.editorTitle}
+            <div>
+                <button id = "clr" onClick = {eraseText}>Clear</button>
+                <button onClick = {handleToggle}>{isOpen? "[-]":"[+]"}</button>
+            </div>
+        </div>
+            <textarea className = {isOpen?"opened":"closed"} value={value} onChange={changeValue} row = "7" id = {props.id} placeholder = {props.placeholder}></textarea>
         </div>
     );
 }
