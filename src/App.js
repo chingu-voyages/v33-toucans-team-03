@@ -31,9 +31,9 @@ function App() {
         <Route exact={true} path="/">
           <div className="container">
             <div className='Editors'>
-              <Editor id='html' placeholder='Write HTML code here' click={html} />
-              <Editor id='css' placeholder='Write CSS code here' click={css} />
-              <Editor id='js' placeholder='Write JavaScript code here' click={js} />
+              <Editor id='html' placeholder='Write HTML code here' editorTitle = "HTML" click={html} />
+              <Editor id='css' placeholder='Write CSS code here' editorTitle = "CSS" click={css} />
+              <Editor id='js' placeholder='Write JavaScript code here' editorTitle = "JavaScript" click={js} />
             </div>
             <Frame html={s_html} css={s_css} js={s_js} location={"home"}/>
           </div>

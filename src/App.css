@@ -8,7 +8,6 @@ textarea {
   padding-bottom: 0px;
   margin-left: 10px;
   margin-right: 10px;
-  margin-top: 10px;
   margin-bottom: 5px;
 }
 .Editors {
@@ -25,4 +24,71 @@ body {
 .container{
   display: flex;
   
+}
+.opened {
+  background-color: rgb(86, 81, 104);
+  border-color: rgb(31, 28, 65);
+  color: white;
+  font: 'Raleway',sans-serif;
+  height: 215px;
+  width: 90%;
+  padding: 3px;
+  padding-bottom: 0px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 0px;
+  margin-bottom: 5px;
+}
+.Editors {
+  width: 30%;
+  height: 100%;
+  background:  linear-gradient(to right,#0d5280, rgb(80, 54, 109));
+  padding-right: 5px;
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+body {
+  margin: 0;
+}
+.container{
+  display: flex;
+  
+}
+.titles {
+  display: flex;
+  margin-left: 10px;
+  margin-top: 10px;
+  width: 90%;
+  padding: 3px;
+  padding-inline-start: 5px;
+  padding-block: 8px;
+  justify-content: space-between;
+  background-color: rgb(31, 28, 65);
+  color: rgb(157, 148, 240);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+button {
+   background-color: rgb(157, 148, 240);
+   border-color: rgb(157, 148, 240);
+ }
+button:hover{
+  background-color: rgb(134, 122, 236);
+  border-color: rgb(134, 122, 236);
+}
+
+.closed {
+  background-color: rgb(86, 81, 104);
+  border-color: rgb(31, 28, 65);
+  color: white;
+  font: 'Raleway',sans-serif;
+  height: 50px; 
+  width: 90%;
+  padding: 3px;
+  padding-bottom: 0px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 0px;
+  margin-bottom: 5px;
 }
