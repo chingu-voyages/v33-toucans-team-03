@@ -25,8 +25,7 @@ body {
   margin: 0;
 }
 .container{
-  display: flex;
-  
+  display: flex; 
 }
 .titles {
   display: flex;
@@ -43,14 +42,13 @@ body {
   border-top-right-radius: 8px;
 }
 button {
-   background-color: rgb(157, 148, 240);
-   border-color: rgb(157, 148, 240);
- }
+  background-color: rgb(157, 148, 240);
+  border-color: rgb(157, 148, 240);
+}
 button:hover{
   background-color: rgb(134, 122, 236);
   border-color: rgb(134, 122, 236);
 }
-
 .closed {
   background-color: rgb(86, 81, 104);
   border-color: rgb(31, 28, 65);
