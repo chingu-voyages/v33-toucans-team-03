@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 const Editor = (props) => {
-    const [value, setValue] = useState("");
+    const [value, setValue] = useState(props.html || props.css || props.js);
     const [isOpen, setOpen] = useState(true);
     const changeValue = (e) => {
         setValue(e.target.value)
