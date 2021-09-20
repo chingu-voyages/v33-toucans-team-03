@@ -5,7 +5,7 @@ textarea {
   background-color: rgb(86, 81, 104);
   color: white;
   font: 'Raleway',sans-serif;
-  height: 215px;
+  height: 250px;
   width: 90%;
   padding: 3px;
   padding-bottom: 0px;
@@ -29,10 +29,8 @@ textarea {
 }
 .Editors {
   width: 100%;
+  max-width: 400px;
   height: 100%;
-  /*display : grid;*/
-  grid-area: Editors;
-  /*grid-template-columns: 1fr 1fr 1fr;*/
   background:  linear-gradient(to right,#0d5280, rgb(80, 54, 109));
   padding-right: 5px;
   padding-left: 10px;
@@ -42,21 +40,13 @@ textarea {
 .CompleteFrame {
   width : 100%;
   height : 100%;
-  display: flex;
-  grid-area: CompleteFrame;
-  margin: 15px;
 }
 iframe {
-  height: 700px;
-  width: 825px;
-}
-body {
-  margin: 0;
+  height: 825px;
+  width: 100%;
 }
 .container{
-  display: grid; 
-  grid-template-columns: 30% 70%;
-  grid-template-areas: "Editors CompleteFrame";
+  display: flex;
 }
 .titles {
   display: flex;
@@ -95,16 +85,17 @@ button:hover{
   margin-top: 0px;
   margin-bottom: 5px;
 }
-@media screen and (max-width : 768px) {
+@media only screen and (max-width : 768px) {
   .container{
     display: grid; 
-    grid-template-columns: 30% 70%;
+    grid-template-columns: 100%;
     grid-template-areas: 
-    "Editors Editors"
-    "CompleteFrame CompleteFrame";
+    "Editors"
+    "CompleteFrame";
   }
   .Editors {
-    width: 97%;
+    width: 100%;
+    max-width: 100%;
     height: 100%;
     display : grid;
     grid-area: Editors;
@@ -116,13 +107,13 @@ button:hover{
     padding-bottom: 10px;
   }
   .CompleteFrame {
-    width : 50%;
+    width : 100%;
     height : 100%;
     display: grid;
     grid-area: CompleteFrame;
   }
   iframe {
-    height: 450px;
-    width: 450px;
+    height: 500px;
+    width: 100%;
   }
 }
