@@ -12,8 +12,8 @@ That is it. Have fun!</i>
   <br>
 <br>2.Clone the Project to your local environment by copying the url of the repositiory</i>
 <br><code>git clone</code>
-<br><i>3.Get into the project repo by</i>
 <br>
+<br><i>3.Get into the project repo by</i>
 <br><code>cd v33-toucans-team-03</code>
 <br>
 <br><i>4.Install all the dependencies using the npm packages</i>
