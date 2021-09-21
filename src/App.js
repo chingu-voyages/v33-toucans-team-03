@@ -7,13 +7,14 @@ import {
 } from "react-router-dom";
 import Editor from './components/Editor';
 import Frame from './components/Frame';
+import Footer from './components/Footer';
 
 
 function App() {
   const [s_html, setHTML] = useState("")
   const [s_css, setCSS] = useState("")
   const [s_js, setJS] = useState("")
-
+  
   const html = (e) => {
     setHTML(e.target.value)
   }
@@ -31,12 +32,13 @@ function App() {
         <Route exact={true} path="/">
           <div className="container">
             <div className='Editors'>
-              <Editor id='html' placeholder='Write HTML code here' editorTitle = "HTML" click={html} />
-              <Editor id='css' placeholder='Write CSS code here' editorTitle = "CSS" click={css} />
-              <Editor id='js' placeholder='Write JavaScript code here' editorTitle = "Java Script" click={js} />
+              <Editor id='html' html={s_html} placeholder='Write HTML code here' editorTitle = "HTML" click={html} />
+              <Editor id='css' css={s_css} placeholder='Write CSS code here' editorTitle = "CSS" click={css} />
+              <Editor id='js' js={s_js} placeholder='Write JavaScript code here' editorTitle = "JavaScript" click={js} />
             </div>
             <Frame html={s_html} css={s_css} js={s_js} location={"home"}/>
           </div>
+          <Footer />
         </Route>
         <Route exact={true} path="/fullpage">
         
@@ -49,4 +51,3 @@ function App() {
 }
 
 export default App;
-
