@@ -7,7 +7,8 @@ import {
 } from "react-router-dom";
 import Editor from './components/Editor';
 import Frame from './components/Frame';
-import Footer from './components/Footer';
+import Footer from './components/Footer'
+import Navbar from './components/Navbar';
 
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
     <Router>
       <Switch>
         <Route exact={true} path="/">
+        <Navbar />
           <div className="container">
             <div className='Editors'>
               <Editor id='html' html={s_html} placeholder='Write HTML code here' editorTitle = "HTML" click={html} />
@@ -43,8 +45,9 @@ function App() {
         <Route exact={true} path="/fullpage">
         
           <Frame html={s_html} css={s_css} js={s_js} location={"fullpage"} />
+          <Footer/>
         </Route>
-      </Switch> 
+      </Switch>
     </Router>
 
   );
