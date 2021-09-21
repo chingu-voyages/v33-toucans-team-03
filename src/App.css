@@ -118,3 +118,48 @@ button:hover{
     width: 100%;
   }
 }
+#main-footer{
+	padding: 16px;
+	background:rgb(31, 28, 65);;
+	text-align: center;
+  color :rgb(157, 148, 240)
+}
+.fa {
+  padding: 4px;
+  font-size: 15px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 2px 2px;
+}
+.fa:hover {
+    opacity: 0.625;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+.fa-facebook:hover , .fa-twitter:hover , .fa-youtube:hover , .fa-instagram:hover{
+	color: white;
+	text-decoration:none;
+}
+.fa-copyright { 
+  font-size: 15px;
+}
+.SML {
+  padding-top: 10px;
+}
