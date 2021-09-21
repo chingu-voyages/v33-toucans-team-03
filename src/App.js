@@ -44,7 +44,7 @@ function App() {
         
           <Frame html={s_html} css={s_css} js={s_js} location={"fullpage"} />
         </Route>
-      </Switch>
+      </Switch> 
     </Router>
 
   );
