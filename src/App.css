@@ -29,10 +29,8 @@ textarea {
 }
 .Editors {
   width: 100%;
+  max-width: 400px;
   height: 100%;
-  /*display : grid;*/
-  grid-area: Editors;
-  /*grid-template-columns: 1fr 1fr 1fr;*/
   background:  linear-gradient(to right,#0d5280, rgb(80, 54, 109));
   padding-right: 5px;
   padding-left: 10px;
@@ -42,21 +40,13 @@ textarea {
 .CompleteFrame {
   width : 100%;
   height : 100%;
-  display: flex;
-  grid-area: CompleteFrame;
-  margin: 15px;
 }
 iframe {
-  height: 825px;
-  width: 825px;
-}
-body {
-  margin: 0;
+  height: 841px;
+  width: 100%;
 }
 .container{
-  display: grid; 
-  grid-template-columns: 30% 70%;
-  grid-template-areas: "Editors CompleteFrame";
+  display: flex;
 }
 .titles {
   display: flex;
@@ -105,6 +95,7 @@ button:hover{
   }
   .Editors {
     width: 100%;
+    max-width: 100%;
     height: 100%;
     display : grid;
     grid-area: Editors;
@@ -120,6 +111,7 @@ button:hover{
     height : 100%;
     display: grid;
     grid-area: CompleteFrame;
+    margin-top: 15px;
   }
   iframe {
     height: 500px;
