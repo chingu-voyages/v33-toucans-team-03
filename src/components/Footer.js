@@ -1,17 +1,14 @@
-
-
 const Footer = () => {
     return (
         <footer id="main-footer" class="grid">
-            <div>
-                <h3><i className = "fa fa-copyright"></i><i>2021ChinguPen</i></h3>
+            <div className="footer-copyrights">
+                <h3><i className = "fa fa-copyright" style={{fontSize:'1rem'}}></i><i>2021ChinguPen</i></h3>
                 <h4>Terms & Conditions | Privacy Policy | About | Site Map | FAQs</h4>
             </div>
-            <div className = "SML">Follow us on :
-				<i className="fa fa-facebook"></i>
-				<i className="fa fa-twitter"></i>
-				<i className="fa fa-youtube"></i>
-				<i className="fa fa-instagram"></i>	
+            <div className = "SML">
+				<i className="fa fa-facebook" style={{fontSize:'2rem',margin:'10px'}}></i>
+				<i className="fa fa-twitter" style={{fontSize:'2rem',margin:'10px'}}></i>
+                <i class="fa fa-github" style={{fontSize:'2rem',margin:'10px'}}></i>
             </div>
         </footer>
     )
