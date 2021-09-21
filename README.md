@@ -1,4 +1,4 @@
-## Chingu-pen
+# Chingu-pen
 <i>Chingu-pen is a new online code editor based on web development. Instead of installing different IDEs just to test out a perticular website's layouts and designs..you can just visit our website online and enter your code. This makes your job much easier when you have to create a website just to view the design. You can implement your different ideas or to test your web development skills just by writing your code in this new online code editor which gives you the preview of your desired website.</i>
 ## How to use?
 <i>
