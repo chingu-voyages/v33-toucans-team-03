@@ -4,7 +4,7 @@
 <i>
 * There are three text boxes namely HTML,CSS and Java Script.
   <br>
-* Write your HTML,CSS and Java Script codes in those respective text boxes and Click run.
+* Write your HTML,CSS and Java Script codes in those respective text boxes and click run.
 That is it. Have fun!</i>
 
 ## Installation
