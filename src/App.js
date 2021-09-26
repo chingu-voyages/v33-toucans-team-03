@@ -15,23 +15,39 @@ function App() {
   const [s_html, setHTML] = useState("")
   const [s_css, setCSS] = useState("")
   const [s_js, setJS] = useState("")
-  
+  // const [update, setupdate] = useState(false)
+  const [t_html, settHTML] = useState("")
+  const [t_css, settCSS] = useState("")
+  const [t_js, settJS] = useState("")
   const html = (e) => {
-    setHTML(e.target.value)
+    settHTML(e.target.value)
+
   }
   const css = (e) => {
-    setCSS(e.target.value)
+    settCSS(e.target.value)
   }
   const js = (e) => {
-    setJS(e.target.value)
+    settJS(e.target.value)
   }
-
+  const run=()=>{
+    setHTML(t_html)
+    setCSS(t_css)
+    setJS(t_js)
+    
+  }
+  const clear=()=>{
+    console.log("clear")
+    setHTML("")
+    setCSS("")
+    setJS("")
+  }
+  
 
   return (
     <Router>
       <Switch>
         <Route exact={true} path="/">
-        <Navbar />
+        <Navbar location={"home"} func={run} clr={clear} />
           <div className="container">
             <div className='Editors'>
               <Editor id='html' html={s_html} placeholder='Write HTML code here' editorTitle = "HTML" click={html} />
@@ -43,8 +59,8 @@ function App() {
           <Footer />
         </Route>
         <Route exact={true} path="/fullpage">
-        
-          <Frame html={s_html} css={s_css} js={s_js} location={"fullpage"} />
+        <Navbar location={"Full"} func={run}/>
+          <Frame html={s_html} css={s_css} js={s_js}  />
           <Footer/>
         </Route>
       </Switch>
